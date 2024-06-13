@@ -1,0 +1,170 @@
+@media screen and (max-width: 1320px) {
+    .content-center {
+        padding: 0 30px;
+    }
+    .section-news {
+        &__slider-wrap {
+            max-width: 1080px;
+        }
+    }
+    .news-slider {
+        &__description {
+            @include fonts(15px, 30px, 400);
+        }
+    }
+    .section-news {
+        &__arrows {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-header {
+        padding-top: 320px;
+    }
+    .header-slider {
+        margin-bottom: 150px;
+        &__title {
+            @include fonts(66px, 22px, 700);
+        }
+    }
+    .project-item {
+        margin-bottom: 120px;
+        &__img {
+            height: 380px;
+        }
+        &__bg-top {
+            display: none;
+        }
+        &__bg-bottom {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .project-item {
+        &__title {
+            font-size: 34px;
+        }
+        &__img {
+            height: 350px;
+        }
+    }
+    .menu {
+        display: none;
+    }
+    .burger {
+        width: 30px;
+        height: 22px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &__icon {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            &:before,
+            &:after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                left: 0;
+                right: 0;
+                transition-duration: 0.4s;
+            }
+            &:before {
+                top: 0;
+            }
+            &:after {
+                bottom: 0;
+            }
+        }
+    }
+    .burger-checkbox:checked ~ .menu {
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: 0.4s;
+        top: 105px;
+        background-color: #fff;
+        display: block;
+        height: 100vh;
+    }
+    .menu {
+        &__item {
+            width: 100%;
+            flex-direction: column;
+        }
+        &__link {
+            font-size: 30px;
+            line-height: 40px;
+            color: #61a1fd;
+            padding-left: 25px;
+        }
+        &__list {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid #beb8b8;
+        }
+    }
+    .burger-checkbox:checked ~ .burger {
+        .burger__icon {
+            background: transparent;
+            &:before {
+                top: 50%;
+                transform: rotateZ(45deg);
+                background-color: #fff;
+            }
+            &:after {
+                top: 50%;
+                transform: rotateZ(-45deg);
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header-slider {
+        &__title {
+            @include fonts(50px, 22px, 700);
+            margin-bottom: 40px;
+        }
+    }
+    .project-item {
+        &__title {
+            font-size: 34px;
+        }
+        &__img {
+            height: 265px;
+        }
+    }
+}
+
+@media screen and (max-width: 779px) {
+    .header-slider {
+        &__title {
+            @include fonts(40px, 22px, 700);
+            margin-bottom: 40px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 689px) {
+    .project-item {
+        &__title {
+            text-align: center;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
