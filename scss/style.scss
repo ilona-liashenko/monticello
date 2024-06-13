@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 .section-header {
-    background-image: url(/img/header_bg.png);
+    background-image: url(../img/header_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 370px;
@@ -274,7 +274,7 @@
     }
 }
 .section-news {
-    background-image: url(/img/news_bg.png);
+    background-image: url(../img/news_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -419,7 +419,7 @@
 }
 
 .footer {
-    background-image: url(/img/footer_bg.png);
+    background-image: url(../img/footer_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 210px;
@@ -448,7 +448,7 @@
     position: absolute;
     bottom: 115px;
     width: 100%;
-    background-image: url(/img/contacts_bg.png);
+    background-image: url(../img/contacts_bg.png);
     background-repeat: no-repeat;
     padding: 90px 60px 80px 60px;
     box-sizing: border-box;
